@@ -206,7 +206,7 @@ public class BeanInfoGen {
                 || typeName.toString().equals("float")
                 || typeName.toString().equals("java.lang.String"))) {
             builder.beginControlFlow("if($L == id) ", id);
-            builder.addStatement("return com.cylan.jiafeigou.dp.DpUtils.pack($L)", name);
+            builder.addStatement("return hunt.apt.DpUtils.pack($L)", name);
             builder.endControlFlow();
             return true;
         }
