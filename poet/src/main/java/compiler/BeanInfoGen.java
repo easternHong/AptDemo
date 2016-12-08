@@ -120,7 +120,7 @@ public class BeanInfoGen {
         addDevMethod(typeSpec);
         addParcelableImplements(typeSpec);
         addGetByteMethod(typeSpec);
-        addGetObjectMethod(typeSpec
+        addGetObjectMethod(typeSpec);
         generate(typeSpec, processingEnv);
     }
 
