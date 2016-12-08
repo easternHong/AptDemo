@@ -50,10 +50,10 @@ public class TestProcessor extends AbstractProcessor {
         if (beanInfoGen == null) {
             beanInfoGen = new BeanInfoGen();
             beanInfoGen.go(Device.CAMERA, processingEnv, roundEnv);
+            beanInfoGen.go(Device.BELL, processingEnv, roundEnv);
+            beanInfoGen.go(Device.CLOUD, processingEnv, roundEnv);
+            beanInfoGen.go(Device.MAG, processingEnv, roundEnv);
         }
-//        BeanInfoGen.go(Device.BELL, processingEnv, roundEnv);
-//        BeanInfoGen.go(Device.CLOUD, processingEnv, roundEnv);
-//        BeanInfoGen.go(Device.MAG, processingEnv, roundEnv);
         return true;
     }
 
